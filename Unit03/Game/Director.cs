@@ -38,7 +38,10 @@ namespace Unit03.Game
         /// </summary>
         private void GetInputs()
         {
-            _terminalService.WriteText(_hider._location.ToString());
+            // Helps with debugging; COMMENT THIS OUT BEFORE SUBMITTING!!!
+            
+            // _terminalService.WriteText(_hider._location.ToString());
+            
             int location = _terminalService.ReadNumber("\nEnter a location [1-1000]: ");
             _seeker.MoveLocation(location);
         }

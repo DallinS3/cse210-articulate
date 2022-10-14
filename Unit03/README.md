@@ -35,3 +35,22 @@ root                    (project root folder)
 ## Authors
 * Matt Manley (manleym@byui.edu)
 * Scott Burton (burtons@byui.edu)
+
+## Encapsulation Question
+* What is encapsulation and why is it important? 
+Encapsulation is the process of using dissemination of information. 
+Basically, hiding information through using access modifiers is pos-
+sible by using conventional means or keywords, thus safeguarding code.
+What the user does not need to see nor interact with is covered up or 
+protected so that code procedures do not fail. Additionally, it
+modifies who has access to information or data, thus protecting
+data and information from user corruption or improper modification.  
+Another benefit of this encapsulation method is the simplification of 
+assignments, user interactions, and related input to the code.
+I feel like the combining of encapsulation with abstraction gives
+programmers the opportunity to expand upon the abstraction of ideas
+for the projects contained within the written code. The better
+structured the encapsulation, the better the chances of having an
+improved abstraction method to create games, files, and projects that
+are more user-friendly and benenficial it is for users, programmers,
+project managers, companies, and all!
