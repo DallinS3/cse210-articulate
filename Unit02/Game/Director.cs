@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 
-
 namespace Unit02.Game
 {
     /// <summary>
@@ -21,7 +20,7 @@ namespace Unit02.Game
         /// </summary>
         public Director()
         {
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 6; i++)
             {
                 Die die = new Die();
                 _dice.Add(die);
@@ -65,7 +64,7 @@ namespace Unit02.Game
             foreach (Die die in _dice)
             {
                 die.Roll();
-                _score += die.points;
+                _score += die.dieScore;
             }
             _totalScore += _score;
         }
@@ -83,7 +82,7 @@ namespace Unit02.Game
             string values = "";
             foreach (Die die in _dice)
             {
-                values += $"{die.value} ";
+                values += $"{die.dieValue} ";
             }
 
             Console.WriteLine($"You rolled: {values}");
