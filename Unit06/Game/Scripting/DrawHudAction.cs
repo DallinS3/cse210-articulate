@@ -27,11 +27,12 @@ namespace Unit06.Game.Scripting
         // todo: fix the bug by making sure the text value is set to the appropriate variable.
         private void DrawLabel(Cast cast, string group, string format, int data)
         {
-            string theValueToDisplay = string.Format(format, data);
+            string theValueToDisplay = string.Format(format, data, (data / 10));
             
             Label label = (Label)cast.GetFirstActor(group);
             Text text = label.GetText();
-            text.SetValue(format);
+            // text.SetValue(data.ToString());
+            text.SetValue(theValueToDisplay);
             Point position = label.GetPosition();
             _videoService.DrawText(text, position);
         }
