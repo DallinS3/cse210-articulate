@@ -39,6 +39,23 @@ namespace Unit05.Game.Scripting
             {
                 actor.MoveNext();
             }
+
+            /*
+            foreach (Actor actor in cast.GetAllActors())
+            {
+                actor.MoveNext();
+            }
+
+            -- OR --
+
+            Snake snake = (Snake)cast.GetFirstActor("snake");
+            snake.MoveNext();
+
+            -- OR --
+
+            Actor snake = cast.GetFirstActor("snake");
+            snake.MoveNext();
+            */
         }
     }
 }
